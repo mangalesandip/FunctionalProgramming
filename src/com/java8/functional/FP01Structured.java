@@ -9,9 +9,15 @@ public class FP01Structured {
 		
 	}
 
+	private static void print(int number) {
+		System.out.println(number);
+	}
 	private static void printAllNumbersInListStructure(List<Integer> numbers) {
-		for (Integer number : numbers) {
-			System.out.println(number);
-		}
+		numbers.stream().forEach(FP01Structured :: print);
+		
+		
+//		for (Integer number : numbers) {
+//			System.out.println(number);
+//		}
 	}
 }

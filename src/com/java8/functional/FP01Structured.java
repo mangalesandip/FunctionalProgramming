@@ -5,12 +5,20 @@ import java.util.List;
 
 public class FP01Structured {
 	public static void main(String[] args) {
-		printAllNumbersInListStructure(Arrays.asList(45,56,70,88));
-		
+		List<Integer> numbers = Arrays.asList(45,56,70,25,67,53,88);
+		printEvenNumbersInListStructure(numbers);
 	}
 
-	private static void printAllNumbersInListStructure(List<Integer> numbers) {
-		numbers.stream()
-			.forEach(System.out :: println);// Method reference
+	private static void printEvenNumbersInListStructure(List<Integer> numbers) {
+		System.out.println("Strucural");
+		for (Integer number : numbers) {
+			if(number%2 == 0) {
+				System.out.println(number);
+			}
+		}
+		
 	}
+	
+
+	
 }

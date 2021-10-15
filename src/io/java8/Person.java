@@ -1,6 +1,7 @@
 package io.java8;
 
 public class Person {
+
 	String firstName;
 	String lastName;
 	int age;

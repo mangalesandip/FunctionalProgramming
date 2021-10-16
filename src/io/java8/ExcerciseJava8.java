@@ -3,6 +3,7 @@ package io.java8;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class ExcerciseJava8 {
 	public static void main(String[] args) {
@@ -18,9 +19,9 @@ public class ExcerciseJava8 {
 		printConditionally(people, p -> p.getFirstName().startsWith("C"));
 	}
 
-	private static void printConditionally(List<Person> people, Condition condition) {
+	private static void printConditionally(List<Person> people, Predicate<Person> predicate) {
 		for (Person person : people) {
-			if (condition.test(person)) {
+			if (predicate.test(person)) {
 				System.out.println(person);
 			}
 		}

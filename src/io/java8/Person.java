@@ -5,14 +5,12 @@ public class Person {
 	String firstName;
 	String lastName;
 	int age;
-	int salary;
 	
-	public Person(String firstName, String lastName, int age, int salary) {
+	public Person(String firstName, String lastName, int age) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
-		this.salary = salary;
 	}
 	
 	public String getFirstName() {
@@ -33,19 +31,9 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	
-	public int getSalary() {
-		return salary;
-	}
-
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
 
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", salary=" + salary
-				+ "]";
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
 	}
 }

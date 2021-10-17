@@ -5,7 +5,7 @@ public class MethodReferenceExample1 {
 		Thread t = new Thread(()->pringMsg());
 		t.start();
 		
-		Thread t1 = new Thread(MethodReferenceExample1 :: pringMsg);
+		Thread t1 = new Thread(MethodReferenceExample1 :: pringMsg); // without parameter
 		t1.start();
 		
 	}
